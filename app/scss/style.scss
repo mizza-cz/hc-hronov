@@ -10549,6 +10549,8 @@ h1 {
     0 2px 2px 0 rgba(18, 22, 25, 0.05);
   background-color: #fff;
   border-radius: 60px;
+  position: relative;
+  z-index: 999;
 }
 .logo img {
   width: 100%;
@@ -10637,7 +10639,7 @@ header .sidebar nav {
   max-width: 280px;
   padding: 21px 33px;
   text-align: right;
-  background-color: #121619;
+  background-color: #044c8c;
   transition: all 0.4s;
 }
 header .sidebar nav a {
