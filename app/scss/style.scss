@@ -10787,14 +10787,16 @@ article .article-info {
   font-size: 12px;
 }
 .topstory .topstory-item {
-  display: inline-block;
   text-decoration: none;
   position: relative;
+  aspect-ratio: 428/285;
+  display: block;
 }
 .topstory .topstory-item img {
   max-width: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .topstory .topstory-item .topstory-item-detail {
   position: absolute;
@@ -10834,6 +10836,9 @@ article .article-info {
 }
 .topstory .topstory-item.main-item .topstory-item-detail {
   padding-bottom: 32px;
+}
+.topstory .topstory-item.main-item {
+  aspect-ratio: 861/576;
 }
 .match {
   margin: 16px;
