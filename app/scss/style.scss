@@ -1,5 +1,6 @@
 /*! purgecss start ignore */
-
+@import "vars";
+@import "zapasy";
 .overflow-ellipsis {
   display: -webkit-box;
   -webkit-line-clamp: var(--text-lines);
@@ -539,36 +540,7 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1140px;
-  }
-}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -10840,51 +10812,7 @@ article .article-info {
 .topstory .topstory-item.main-item {
   aspect-ratio: 861/576;
 }
-.match {
-  margin: 16px;
-  text-align: center;
-  font-family: "revolution-gothic", sans-serif;
-}
-.match .match-info,
-.match .match-league {
-  font-size: 12px;
-  padding: 4px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.match .match-info {
-  color: #878d96;
-}
-.match .match-league {
-  color: #121619;
-}
-.match .match-logos {
-  margin: 12px;
-}
-.match .match-logos span {
-  width: 64px;
-  height: 64px;
-  display: inline-block;
-  border-radius: 32px;
-  background-color: #fff;
-  margin: 4px;
-}
-.match .match-logos img {
-  border-radius: 32px;
-  width: 100%;
-  height: 100%;
-}
-.match .match-team {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.33;
-}
-.match .match-score {
-  font-size: 40px;
-  font-weight: 700;
-}
+
 .article-body .match-logos span {
   width: 120px;
   height: 120px;
