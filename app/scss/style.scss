@@ -10679,10 +10679,29 @@ header .dropdown-item {
   font-weight: 400;
   letter-spacing: normal;
 }
+.space .container {
+  max-width: 1320px;
+}
 header .dropdown-item:hover {
   text-decoration: underline;
   color: #05a651;
   background: none;
+}
+.social-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  a {
+    width: 20px;
+    height: 20px;
+    display: block;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
 }
 .panel {
   border-radius: 4px;
@@ -10738,8 +10757,17 @@ article {
 }
 article img {
   float: left;
-  max-width: 50%;
+  aspect-ratio: 428/300;
   margin-right: 32px;
+  max-width: 40%;
+  object-fit: cover;
+}
+@media (max-width: 740px) {
+  article img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 article a {
   text-decoration: none;
