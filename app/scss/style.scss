@@ -1,6 +1,8 @@
 /*! purgecss start ignore */
 @import "vars";
 @import "zapasy";
+@import "clanky";
+@import "lightgallery";
 .overflow-ellipsis {
   display: -webkit-box;
   -webkit-line-clamp: var(--text-lines);
@@ -10914,6 +10916,7 @@ article .article-info {
 .match-list-item .match-score.draw {
   color: #878d96;
 }
+
 .banner {
   height: 208px;
   background-color: rgba(77, 83, 88, 0.1);
@@ -11284,5 +11287,71 @@ html {
 }
 .archive-section__inner .article img {
   aspect-ratio: 280/180;
+}
+@media (max-width: 575px) {
+  .match-list-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .match-list-item .match-logos {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .match-list-item .match-text {
+    text-align: center;
+    margin-left: 0;
+  }
+  .match-list-item .match-score {
+    text-align: center;
+  }
+  .article-body {
+    margin: 0;
+  }
+}
+
+.article-body iframe {
+  margin: 20px auto;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  aspect-ratio: 738/418;
+  height: auto !important;
+}
+.article-body .match-logos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.article-body .match-team {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.article-body .match-score {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+.article-body .match-info {
+  color: #878d96;
+}
+.article-body .match-info,
+.article-body .match-league {
+  text-align: center;
+  font-size: 12px;
+  padding: 4px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.article-body .match-league {
+  margin-bottom: 24px;
+}
+.page-item.active .page-link {
+  background-color: #004b8d;
 }
 /*! purgecss end ignore */
