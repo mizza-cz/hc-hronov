@@ -1134,11 +1134,22 @@
             });
         </script>
         <script>
-            var image = document.querySelector(".article-header img");
-            if (!image || !image.complete || image.naturalWidth === 0) {
-                var articleHeader = document.querySelector(".article-header");
-                articleHeader.classList.add("none-img");
-            }
+            document.addEventListener("DOMContentLoaded", function () {
+                var image = document.querySelector(".article-header img");
+                if (!image || !image.complete || image.naturalWidth === 0) {
+                    var noneImgDiv = document.createElement("div");
+                    noneImgDiv.classList.add("none-img");
+
+                    var articleHeader =
+                        document.querySelector(".article-header");
+                    var articleBody = document.querySelector(".article-body");
+
+                    var parentElement = articleHeader.parentNode;
+                    parentElement.insertBefore(noneImgDiv, articleHeader);
+                    noneImgDiv.appendChild(articleHeader);
+                    noneImgDiv.appendChild(articleBody);
+                }
+            });
         </script>
     </body>
 </html>

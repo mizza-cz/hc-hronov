@@ -11372,17 +11372,31 @@ html {
   margin: 32px 0 24px;
 }
 
-.article-header.none-img {
-  .article-overlay {
-    background-image: none;
-    position: static;
-    padding-top: 0;
-    h1 {
-      text-shadow: none;
-      color: #000;
-    }
-    &::after {
-      display: none;
+// .none-img .article-header {
+//   .article-overlay {
+//     background-image: none;
+//     position: static;
+//     padding-top: 0;
+//     h1 {
+//       text-shadow: none;
+//       color: #000;
+//     }
+//     &::after {
+//       display: none;
+//     }
+//   }
+// }
+.none-img {
+  .article-header {
+    display: none;
+  }
+  .article-intro {
+    display: none;
+  }
+  .article-body {
+    padding-top: 100px;
+    @media (max-width: 990px) {
+      padding-top: 60px;
     }
   }
 }
