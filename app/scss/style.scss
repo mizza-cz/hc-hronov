@@ -11371,4 +11371,19 @@ html {
 .static-page h4 {
   margin: 32px 0 24px;
 }
+
+.article-header.none-img {
+  .article-overlay {
+    background-image: none;
+    position: static;
+    padding-top: 0;
+    h1 {
+      text-shadow: none;
+      color: #000;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
 /*! purgecss end ignore */
