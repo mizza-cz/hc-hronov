@@ -10610,7 +10610,7 @@ header .sidebar nav {
   top: 57px;
   right: -280px;
   min-width: 280px;
-  max-width: 280px;
+  max-width: 320px;
   padding: 21px 33px;
   text-align: right;
   background-color: #044c8c;
@@ -11398,6 +11398,11 @@ html {
     @media (max-width: 990px) {
       padding-top: 60px;
     }
+  }
+}
+.collapse.show {
+  li {
+    display: block;
   }
 }
 /*! purgecss end ignore */

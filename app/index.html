@@ -34,6 +34,28 @@
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var nav = $(".sidebar nav");
+                var overlay = $(".overlay");
+                var button = $(".sidebar-button");
+                button.on("click", function () {
+                    nav.toggle();
+                    nav.toggleClass("onscreen");
+                    overlay.toggleClass("active");
+                    button.attr(
+                        "aria-expanded",
+                        button.attr("aria-expanded") === "true"
+                            ? "false"
+                            : "true"
+                    );
+                });
+                $("table").wrap('<div class="table-responsive"></div>');
+                $(".js-select").on("change", function () {
+                    location.href = $(this).val();
+                });
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -1239,6 +1261,7 @@
         <div class="overlay d-lg-none"></div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
