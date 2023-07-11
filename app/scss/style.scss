@@ -11288,6 +11288,31 @@ html {
 .archive-section__inner .article img {
   aspect-ratio: 280/180;
 }
+@media (max-width: 991px) {
+  .article {
+    display: flex;
+    flex-direction: column;
+    h3,
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    &-info {
+      width: fit-content;
+    }
+    a {
+      display: block;
+      width: 100%;
+
+      img {
+        width: 100%;
+        display: block;
+        max-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 @media (max-width: 575px) {
   .match-list-item {
     flex-direction: column;
@@ -11405,4 +11430,5 @@ html {
     display: block;
   }
 }
+
 /*! purgecss end ignore */
